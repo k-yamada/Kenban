@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091708F51DC5D78400366812 /* NSApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091708F41DC5D78400366812 /* NSApplication+Extension.swift */; };
+		096B6D5C1DB522E700D30C4E /* KeyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096B6D5B1DB522E700D30C4E /* KeyMapper.swift */; };
+		096B6D5E1DB5979400D30C4E /* HotKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096B6D5D1DB5979400D30C4E /* HotKeys.swift */; };
+		098B9CC01DB06DA100C6A349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B9CBF1DB06DA100C6A349 /* AppDelegate.swift */; };
+		098B9CC21DB06DA100C6A349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B9CC11DB06DA100C6A349 /* ViewController.swift */; };
+		098B9CC41DB06DA100C6A349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098B9CC31DB06DA100C6A349 /* Assets.xcassets */; };
+		098B9CC71DB06DA100C6A349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098B9CC51DB06DA100C6A349 /* Main.storyboard */; };
+		098B9CD21DB06DA100C6A349 /* KenbanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B9CD11DB06DA100C6A349 /* KenbanTests.swift */; };
+		098B9CDD1DB06DA200C6A349 /* KenbanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B9CDC1DB06DA200C6A349 /* KenbanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		098B9CCE1DB06DA100C6A349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 098B9CB41DB06DA100C6A349 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 098B9CBB1DB06DA100C6A349;
+			remoteInfo = Kenban;
+		};
+		098B9CD91DB06DA200C6A349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 098B9CB41DB06DA100C6A349 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 098B9CBB1DB06DA100C6A349;
+			remoteInfo = Kenban;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		091708F41DC5D78400366812 /* NSApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSApplication+Extension.swift"; sourceTree = "<group>"; };
+		096B6D5B1DB522E700D30C4E /* KeyMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyMapper.swift; sourceTree = "<group>"; };
+		096B6D5D1DB5979400D30C4E /* HotKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKeys.swift; sourceTree = "<group>"; };
+		098B9CBC1DB06DA100C6A349 /* Kenban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kenban.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		098B9CBF1DB06DA100C6A349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		098B9CC11DB06DA100C6A349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		098B9CC31DB06DA100C6A349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		098B9CC61DB06DA100C6A349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		098B9CC81DB06DA100C6A349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		098B9CCD1DB06DA100C6A349 /* KenbanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenbanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		098B9CD11DB06DA100C6A349 /* KenbanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenbanTests.swift; sourceTree = "<group>"; };
+		098B9CD31DB06DA100C6A349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		098B9CD81DB06DA200C6A349 /* KenbanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenbanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		098B9CDC1DB06DA200C6A349 /* KenbanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenbanUITests.swift; sourceTree = "<group>"; };
+		098B9CDE1DB06DA200C6A349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		098B9CB91DB06DA100C6A349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098B9CCA1DB06DA100C6A349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098B9CD51DB06DA200C6A349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		091708F31DC5D68D00366812 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				091708F41DC5D78400366812 /* NSApplication+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		098B9CB31DB06DA100C6A349 = {
+			isa = PBXGroup;
+			children = (
+				098B9CBE1DB06DA100C6A349 /* Kenban */,
+				098B9CD01DB06DA100C6A349 /* KenbanTests */,
+				098B9CDB1DB06DA200C6A349 /* KenbanUITests */,
+				098B9CBD1DB06DA100C6A349 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		098B9CBD1DB06DA100C6A349 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				098B9CBC1DB06DA100C6A349 /* Kenban.app */,
+				098B9CCD1DB06DA100C6A349 /* KenbanTests.xctest */,
+				098B9CD81DB06DA200C6A349 /* KenbanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		098B9CBE1DB06DA100C6A349 /* Kenban */ = {
+			isa = PBXGroup;
+			children = (
+				091708F31DC5D68D00366812 /* Extensions */,
+				098B9CEC1DB3D96D00C6A349 /* Models */,
+				098B9CBF1DB06DA100C6A349 /* AppDelegate.swift */,
+				098B9CC11DB06DA100C6A349 /* ViewController.swift */,
+				098B9CC31DB06DA100C6A349 /* Assets.xcassets */,
+				098B9CC51DB06DA100C6A349 /* Main.storyboard */,
+				098B9CC81DB06DA100C6A349 /* Info.plist */,
+			);
+			path = Kenban;
+			sourceTree = "<group>";
+		};
+		098B9CD01DB06DA100C6A349 /* KenbanTests */ = {
+			isa = PBXGroup;
+			children = (
+				098B9CD11DB06DA100C6A349 /* KenbanTests.swift */,
+				098B9CD31DB06DA100C6A349 /* Info.plist */,
+			);
+			path = KenbanTests;
+			sourceTree = "<group>";
+		};
+		098B9CDB1DB06DA200C6A349 /* KenbanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				098B9CDC1DB06DA200C6A349 /* KenbanUITests.swift */,
+				098B9CDE1DB06DA200C6A349 /* Info.plist */,
+			);
+			path = KenbanUITests;
+			sourceTree = "<group>";
+		};
+		098B9CEC1DB3D96D00C6A349 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				096B6D5B1DB522E700D30C4E /* KeyMapper.swift */,
+				096B6D5D1DB5979400D30C4E /* HotKeys.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		098B9CBB1DB06DA100C6A349 /* Kenban */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 098B9CE11DB06DA200C6A349 /* Build configuration list for PBXNativeTarget "Kenban" */;
+			buildPhases = (
+				098B9CB81DB06DA100C6A349 /* Sources */,
+				098B9CB91DB06DA100C6A349 /* Frameworks */,
+				098B9CBA1DB06DA100C6A349 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kenban;
+			productName = Kenban;
+			productReference = 098B9CBC1DB06DA100C6A349 /* Kenban.app */;
+			productType = "com.apple.product-type.application";
+		};
+		098B9CCC1DB06DA100C6A349 /* KenbanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 098B9CE41DB06DA200C6A349 /* Build configuration list for PBXNativeTarget "KenbanTests" */;
+			buildPhases = (
+				098B9CC91DB06DA100C6A349 /* Sources */,
+				098B9CCA1DB06DA100C6A349 /* Frameworks */,
+				098B9CCB1DB06DA100C6A349 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				098B9CCF1DB06DA100C6A349 /* PBXTargetDependency */,
+			);
+			name = KenbanTests;
+			productName = KenbanTests;
+			productReference = 098B9CCD1DB06DA100C6A349 /* KenbanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		098B9CD71DB06DA200C6A349 /* KenbanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 098B9CE71DB06DA200C6A349 /* Build configuration list for PBXNativeTarget "KenbanUITests" */;
+			buildPhases = (
+				098B9CD41DB06DA200C6A349 /* Sources */,
+				098B9CD51DB06DA200C6A349 /* Frameworks */,
+				098B9CD61DB06DA200C6A349 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				098B9CDA1DB06DA200C6A349 /* PBXTargetDependency */,
+			);
+			name = KenbanUITests;
+			productName = KenbanUITests;
+			productReference = 098B9CD81DB06DA200C6A349 /* KenbanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		098B9CB41DB06DA100C6A349 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = kyamada;
+				TargetAttributes = {
+					098B9CBB1DB06DA100C6A349 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XLETXA9867;
+						ProvisioningStyle = Automatic;
+					};
+					098B9CCC1DB06DA100C6A349 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XLETXA9867;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 098B9CBB1DB06DA100C6A349;
+					};
+					098B9CD71DB06DA200C6A349 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XLETXA9867;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 098B9CBB1DB06DA100C6A349;
+					};
+				};
+			};
+			buildConfigurationList = 098B9CB71DB06DA100C6A349 /* Build configuration list for PBXProject "Kenban" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 098B9CB31DB06DA100C6A349;
+			productRefGroup = 098B9CBD1DB06DA100C6A349 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				098B9CBB1DB06DA100C6A349 /* Kenban */,
+				098B9CCC1DB06DA100C6A349 /* KenbanTests */,
+				098B9CD71DB06DA200C6A349 /* KenbanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		098B9CBA1DB06DA100C6A349 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098B9CC41DB06DA100C6A349 /* Assets.xcassets in Resources */,
+				098B9CC71DB06DA100C6A349 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098B9CCB1DB06DA100C6A349 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098B9CD61DB06DA200C6A349 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		098B9CB81DB06DA100C6A349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096B6D5C1DB522E700D30C4E /* KeyMapper.swift in Sources */,
+				098B9CC21DB06DA100C6A349 /* ViewController.swift in Sources */,
+				098B9CC01DB06DA100C6A349 /* AppDelegate.swift in Sources */,
+				096B6D5E1DB5979400D30C4E /* HotKeys.swift in Sources */,
+				091708F51DC5D78400366812 /* NSApplication+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098B9CC91DB06DA100C6A349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098B9CD21DB06DA100C6A349 /* KenbanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098B9CD41DB06DA200C6A349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098B9CDD1DB06DA200C6A349 /* KenbanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		098B9CCF1DB06DA100C6A349 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 098B9CBB1DB06DA100C6A349 /* Kenban */;
+			targetProxy = 098B9CCE1DB06DA100C6A349 /* PBXContainerItemProxy */;
+		};
+		098B9CDA1DB06DA200C6A349 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 098B9CBB1DB06DA100C6A349 /* Kenban */;
+			targetProxy = 098B9CD91DB06DA200C6A349 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		098B9CC51DB06DA100C6A349 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				098B9CC61DB06DA100C6A349 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		098B9CDF1DB06DA200C6A349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		098B9CE01DB06DA200C6A349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		098B9CE21DB06DA200C6A349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XLETXA9867;
+				INFOPLIST_FILE = Kenban/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyamada.Kenban;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		098B9CE31DB06DA200C6A349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XLETXA9867;
+				INFOPLIST_FILE = Kenban/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyamada.Kenban;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		098B9CE51DB06DA200C6A349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XLETXA9867;
+				INFOPLIST_FILE = KenbanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyamada.KenbanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kenban.app/Contents/MacOS/Kenban";
+			};
+			name = Debug;
+		};
+		098B9CE61DB06DA200C6A349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XLETXA9867;
+				INFOPLIST_FILE = KenbanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyamada.KenbanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kenban.app/Contents/MacOS/Kenban";
+			};
+			name = Release;
+		};
+		098B9CE81DB06DA200C6A349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XLETXA9867;
+				INFOPLIST_FILE = KenbanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyamada.KenbanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Kenban;
+			};
+			name = Debug;
+		};
+		098B9CE91DB06DA200C6A349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XLETXA9867;
+				INFOPLIST_FILE = KenbanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyamada.KenbanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Kenban;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		098B9CB71DB06DA100C6A349 /* Build configuration list for PBXProject "Kenban" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098B9CDF1DB06DA200C6A349 /* Debug */,
+				098B9CE01DB06DA200C6A349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		098B9CE11DB06DA200C6A349 /* Build configuration list for PBXNativeTarget "Kenban" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098B9CE21DB06DA200C6A349 /* Debug */,
+				098B9CE31DB06DA200C6A349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		098B9CE41DB06DA200C6A349 /* Build configuration list for PBXNativeTarget "KenbanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098B9CE51DB06DA200C6A349 /* Debug */,
+				098B9CE61DB06DA200C6A349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		098B9CE71DB06DA200C6A349 /* Build configuration list for PBXNativeTarget "KenbanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098B9CE81DB06DA200C6A349 /* Debug */,
+				098B9CE91DB06DA200C6A349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 098B9CB41DB06DA100C6A349 /* Project object */;
+}
