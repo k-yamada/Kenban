@@ -13,6 +13,7 @@
 		098B9CC71DB06DA100C6A349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098B9CC51DB06DA100C6A349 /* Main.storyboard */; };
 		098B9CD21DB06DA100C6A349 /* KenbanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B9CD11DB06DA100C6A349 /* KenbanTests.swift */; };
 		098B9CDD1DB06DA200C6A349 /* KenbanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B9CDC1DB06DA200C6A349 /* KenbanUITests.swift */; };
+		098B9CEB1DB2042800C6A349 /* KeyCaptureWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B9CEA1DB2042800C6A349 /* KeyCaptureWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		098B9CD81DB06DA200C6A349 /* KenbanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenbanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		098B9CDC1DB06DA200C6A349 /* KenbanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenbanUITests.swift; sourceTree = "<group>"; };
 		098B9CDE1DB06DA200C6A349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		098B9CEA1DB2042800C6A349 /* KeyCaptureWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCaptureWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +97,13 @@
 		098B9CBE1DB06DA100C6A349 /* Kenban */ = {
 			isa = PBXGroup;
 			children = (
+				098B9CEC1DB3D96D00C6A349 /* Models */,
 				098B9CBF1DB06DA100C6A349 /* AppDelegate.swift */,
 				098B9CC11DB06DA100C6A349 /* ViewController.swift */,
 				098B9CC31DB06DA100C6A349 /* Assets.xcassets */,
 				098B9CC51DB06DA100C6A349 /* Main.storyboard */,
 				098B9CC81DB06DA100C6A349 /* Info.plist */,
+				098B9CEA1DB2042800C6A349 /* KeyCaptureWindow.swift */,
 			);
 			path = Kenban;
 			sourceTree = "<group>";
@@ -120,6 +124,13 @@
 				098B9CDE1DB06DA200C6A349 /* Info.plist */,
 			);
 			path = KenbanUITests;
+			sourceTree = "<group>";
+		};
+		098B9CEC1DB3D96D00C6A349 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				098B9CC21DB06DA100C6A349 /* ViewController.swift in Sources */,
 				098B9CC01DB06DA100C6A349 /* AppDelegate.swift in Sources */,
+				098B9CEB1DB2042800C6A349 /* KeyCaptureWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +517,7 @@
 				098B9CE31DB06DA200C6A349 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		098B9CE41DB06DA200C6A349 /* Build configuration list for PBXNativeTarget "KenbanTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				098B9CE61DB06DA200C6A349 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		098B9CE71DB06DA200C6A349 /* Build configuration list for PBXNativeTarget "KenbanUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				098B9CE91DB06DA200C6A349 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
