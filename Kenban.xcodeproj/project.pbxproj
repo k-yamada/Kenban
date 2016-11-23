@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091708F51DC5D78400366812 /* NSApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091708F41DC5D78400366812 /* NSApplication+Extension.swift */; };
+		096B6D5C1DB522E700D30C4E /* KeyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096B6D5B1DB522E700D30C4E /* KeyMapper.swift */; };
+		096B6D5E1DB5979400D30C4E /* HotKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096B6D5D1DB5979400D30C4E /* HotKeys.swift */; };
 		098B9CC01DB06DA100C6A349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B9CBF1DB06DA100C6A349 /* AppDelegate.swift */; };
 		098B9CC21DB06DA100C6A349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B9CC11DB06DA100C6A349 /* ViewController.swift */; };
 		098B9CC41DB06DA100C6A349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098B9CC31DB06DA100C6A349 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091708F41DC5D78400366812 /* NSApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSApplication+Extension.swift"; sourceTree = "<group>"; };
+		096B6D5B1DB522E700D30C4E /* KeyMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyMapper.swift; sourceTree = "<group>"; };
+		096B6D5D1DB5979400D30C4E /* HotKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKeys.swift; sourceTree = "<group>"; };
 		098B9CBC1DB06DA100C6A349 /* Kenban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kenban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		098B9CBF1DB06DA100C6A349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		098B9CC11DB06DA100C6A349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091708F31DC5D68D00366812 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				091708F41DC5D78400366812 /* NSApplication+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		098B9CB31DB06DA100C6A349 = {
 			isa = PBXGroup;
 			children = (
@@ -97,13 +111,14 @@
 		098B9CBE1DB06DA100C6A349 /* Kenban */ = {
 			isa = PBXGroup;
 			children = (
+				091708F31DC5D68D00366812 /* Extensions */,
 				098B9CEC1DB3D96D00C6A349 /* Models */,
 				098B9CBF1DB06DA100C6A349 /* AppDelegate.swift */,
+				098B9CEA1DB2042800C6A349 /* KeyCaptureWindow.swift */,
 				098B9CC11DB06DA100C6A349 /* ViewController.swift */,
 				098B9CC31DB06DA100C6A349 /* Assets.xcassets */,
 				098B9CC51DB06DA100C6A349 /* Main.storyboard */,
 				098B9CC81DB06DA100C6A349 /* Info.plist */,
-				098B9CEA1DB2042800C6A349 /* KeyCaptureWindow.swift */,
 			);
 			path = Kenban;
 			sourceTree = "<group>";
@@ -129,6 +144,8 @@
 		098B9CEC1DB3D96D00C6A349 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				096B6D5B1DB522E700D30C4E /* KeyMapper.swift */,
+				096B6D5D1DB5979400D30C4E /* HotKeys.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,9 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096B6D5C1DB522E700D30C4E /* KeyMapper.swift in Sources */,
 				098B9CC21DB06DA100C6A349 /* ViewController.swift in Sources */,
 				098B9CC01DB06DA100C6A349 /* AppDelegate.swift in Sources */,
 				098B9CEB1DB2042800C6A349 /* KeyCaptureWindow.swift in Sources */,
+				096B6D5E1DB5979400D30C4E /* HotKeys.swift in Sources */,
+				091708F51DC5D78400366812 /* NSApplication+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyamada.Kenban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -432,7 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyamada.Kenban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

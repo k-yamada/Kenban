@@ -12,46 +12,26 @@ import Carbon
 typealias Callback = (NSEvent) -> ()
 
 class KeyCaptureWindow: NSWindow {
-    
     override init(contentRect: NSRect, styleMask style: NSWindowStyleMask, backing bufferingType: NSBackingStoreType, defer flag: Bool) {
-        super.init(contentRect: contentRect, styleMask: style, backing: bufferingType, defer: flag)
+        super.init(contentRect: contentRect, styleMask: [NSBorderlessWindowMask, NSFullSizeContentViewWindowMask], backing: .Buffered, defer: false)
         
-        
-        // z-index
-        self.level = Int(CGWindowLevelForKey(CGWindowLevelKey.statusWindow)) +
-            Int(CGWindowLevelForKey(CGWindowLevelKey.dockWindow)) +
-            Int(CGWindowLevelForKey(CGWindowLevelKey.popUpMenuWindow)) +
-        Int(CGWindowLevelForKey(CGWindowLevelKey.mainMenuWindow))
-        
-        
-        self.animationBehavior = .none
-        
+//        // z-index
+        self.level = Int(CGWindowLevelForKey(CGWindowLevelKey.StatusWindowLevelKey)) +
+            Int(CGWindowLevelForKey(CGWindowLevelKey.DockWindowLevelKey)) +
+            Int(CGWindowLevelForKey(CGWindowLevelKey.PopUpMenuWindowLevelKey))
+        self.animationBehavior = .None
         self.alphaValue = 1.0
-        
-        self.isOpaque = false
-        //        self.hidesOnDeactivate = true
-        self.backgroundColor = NSColor.clear
-        self.titleVisibility = .hidden
+        self.opaque = false
+        self.backgroundColor = NSColor.clearColor()
+        //self.backgroundColor = NSColor.redColor()
+        self.titleVisibility = .Hidden
     }
     
-    override func keyDown(with event: NSEvent) {
-        
-        NSLog("isARepeat: \(event.isARepeat)")
-        NSLog("keyCode: \(event.keyCode)")
-        NSLog("type: \(event.type.rawValue)")
-        super.keyDown(with: event)
-        
-//        if event.modifierFlags.contains(NSEventModifierFlags.command) {
-//            super.keyDown(with: event)
-//            return
-//        }
-
-    }
-    
-    override var canBecomeKey: Bool {
+    override var canBecomeKeyWindow: Bool {
         return false
     }
-    override var canBecomeMain: Bool{
+    
+    override var canBecomeMainWindow: Bool {
         return false
     }
 }
