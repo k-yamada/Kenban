@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		091708F41DC5D78400366812 /* NSApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSApplication+Extension.swift"; sourceTree = "<group>"; };
-		096B6D5B1DB522E700D30C4E /* KeyMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyMapper.swift; sourceTree = "<group>"; };
+		096B6D5B1DB522E700D30C4E /* KeyMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = KeyMapper.swift; sourceTree = "<group>"; tabWidth = 4; };
 		096B6D5D1DB5979400D30C4E /* HotKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKeys.swift; sourceTree = "<group>"; };
 		098B9CBC1DB06DA100C6A349 /* Kenban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kenban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		098B9CBF1DB06DA100C6A349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };

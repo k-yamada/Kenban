@@ -25,10 +25,24 @@ class KeyMapper {
     }
 
     func addMonitorsForEvents() {
-        NSEvent.addGlobalMonitorForEventsMatchingMask([.FlagsChanged], handler: {(event: NSEvent) in
-            self.onFlagsChanged(event)
+        NSEvent.addGlobalMonitorForEventsMatchingMask([.KeyDown, .FlagsChanged], handler: {(event: NSEvent) in
+            switch event.type {
+            case .FlagsChanged:
+                self.onFlagsChanged(event)
+            case .KeyDown:
+                self.lastKeyDownCode = event.keyCode
+            default:
+                break
+            }
         })
         
+        NSEvent.addGlobalMonitorForEventsMatchingMask([.KeyDown], handler: {(event: NSEvent) in
+            if event.type == .KeyDown {
+                print("global Key Down: \(event.type)")
+            }
+        })
+      
+      
         NSEvent.addLocalMonitorForEventsMatchingMask(.KeyDown) { (event) -> NSEvent! in
             self.onKeyDown(event)
             return nil
@@ -64,7 +78,6 @@ class KeyMapper {
     }
     
     private func onKeyDown(event: NSEvent) {
-        lastKeyDownCode = event.keyCode
         let mouseLocation = CGEventGetLocation(CGEventCreate(nil))
         switch Int(event.keyCode) {
         case kVK_ANSI_H:
