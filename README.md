@@ -6,7 +6,7 @@
 
 # セットアップ
 
-- [最新版のKenbanをダウンロード](https://github.com/k-yamada/Kenban/releases/tag/v1.0.0)して、`/Applications `フォルダに移動してください。
+- [最新版のKenbanをダウンロード](https://github.com/k-yamada/Kenban/releases/)して、`/Applications `フォルダに移動してください。
 - Kenban.app を実行し、アプリケーションにコンピュータの制御を許可してください。 (システム環境設定 > セキュリティとプライバシー > プライバシー > アクセシビリティ > Kenban.appにチェック)
 
 # キーバインド
